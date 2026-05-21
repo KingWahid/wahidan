@@ -29,15 +29,15 @@ export function HeroSection({ greeting, profession, bio, ctaWork, ctaResume, t }
     .slice(0, 2)
 
   return (
-    <section id="about" className="min-h-screen flex items-center pt-16 px-8 md:px-16 relative">
+    <section id="about" className="min-h-screen flex items-center pt-16 px-4 sm:px-8 md:px-16 relative">
       {/* Vertical divider — desktop only, full height, close to card */}
       <div className="hidden md:block absolute top-0 bottom-0 w-px bg-border" style={{ left: 'calc(50% + 220px)' }} />
       <div className="max-w-6xl mx-auto w-full py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative">
 
           {/* Left: Text content — stagger children */}
           <motion.div
-            className="flex flex-col gap-3 text-center md:text-left"
+            className="flex flex-col gap-3 text-left md:text-left"
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
@@ -52,7 +52,7 @@ export function HeroSection({ greeting, profession, bio, ctaWork, ctaResume, t }
                 {t('hero.role.label')}
               </p>
               <h1
-                className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95]"
+                className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95]"
                 style={{ fontFamily: "'Cabinet Grotesk', sans-serif" }}
               >
                 <span className="block text-foreground">{greeting},</span>
@@ -80,7 +80,7 @@ export function HeroSection({ greeting, profession, bio, ctaWork, ctaResume, t }
 
             {/* CTA Buttons */}
             <motion.div
-              className="flex flex-wrap gap-3 justify-center md:justify-start mt-2"
+              className="flex flex-wrap gap-3 justify-start mt-2"
               variants={fadeUp}
             >
               <a
@@ -110,19 +110,19 @@ export function HeroSection({ greeting, profession, bio, ctaWork, ctaResume, t }
             >
               <a
                 href="mailto:wahidann765@gmail.com"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-portfolio transition-colors justify-center md:justify-start"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-portfolio transition-colors justify-start"
               >
                 <Mail className="size-4 shrink-0" />
                 wahidann765@gmail.com
               </a>
               <a
                 href="tel:+6285669170171"
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-portfolio transition-colors justify-center md:justify-start"
+                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent-portfolio transition-colors justify-start"
               >
                 <Phone className="size-4 shrink-0" />
                 +62 85669170171
               </a>
-              <span className="flex items-center gap-2 text-sm text-muted-foreground justify-center md:justify-start">
+              <span className="flex items-center gap-2 text-sm text-muted-foreground justify-start">
                 <MapPin className="size-4 shrink-0" />
                 Bandung, Indonesia
               </span>
@@ -130,18 +130,18 @@ export function HeroSection({ greeting, profession, bio, ctaWork, ctaResume, t }
 
             {/* Social Links */}
             <motion.div variants={fadeUp}>
-              <SocialLinks className="justify-center md:justify-start" />
+              <SocialLinks className="justify-start" />
             </motion.div>
           </motion.div>
 
           {/* Right: Profile Card — slides in from right */}
           <motion.div
-            className="flex justify-center md:justify-end md:-mt-20"
+            className="hidden md:flex justify-center md:justify-end md:-mt-20"
             variants={slideInRight}
             initial="hidden"
             animate="visible"
           >
-            <div className={cn('relative w-72 rounded-3xl p-6 flex flex-col items-center gap-4', heroCardClass)}>
+            <div className={cn('relative w-full max-w-[288px] sm:w-72 rounded-3xl p-6 flex flex-col items-center gap-4', heroCardClass)}>
               {/* Top accent line */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-1 rounded-full bg-accent-portfolio" />
 

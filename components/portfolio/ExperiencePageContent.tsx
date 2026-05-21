@@ -38,7 +38,7 @@ export function ExperiencePageContent() {
             {t('experience.label')}
           </motion.p>
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4"
             style={{ fontFamily: "'Cabinet Grotesk', sans-serif" }}
             variants={fadeUp}
           >
@@ -88,7 +88,7 @@ export function ExperiencePageContent() {
                   </div>
 
                   {/* Card */}
-                  <div className="rounded-xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-[#0d1117] p-6">
+                  <div className="rounded-xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-[#0d1117] p-4 sm:p-6">
 
                     {/* Header row */}
                     <div className="flex flex-wrap items-start justify-between gap-3 mb-3">

@@ -17,7 +17,7 @@ export function StatsBar({ stats }: StatsBarProps) {
     <section className="border-y border-border py-8">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
-          className="flex items-center justify-center gap-0 divide-x divide-border"
+          className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center sm:gap-0 sm:divide-x divide-border"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -26,7 +26,7 @@ export function StatsBar({ stats }: StatsBarProps) {
           {stats.map((stat) => (
             <motion.div
               key={stat.label}
-              className="flex flex-col items-center justify-center py-4 px-12 text-center"
+              className="flex flex-col items-center justify-center py-4 px-6 sm:px-12 text-center"
               variants={fadeUp}
             >
               <motion.span

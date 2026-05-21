@@ -69,6 +69,24 @@ export function ExperienceSection({ title, subtitle, t }: ExperienceSectionProps
             </motion.div>
           ))}
         </motion.div>
+
+        {/* Mobile: show all button */}
+        <motion.div
+          className="mt-6 flex justify-center md:hidden"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+        >
+          <Link
+            href="/experience"
+            className="flex items-center gap-1.5 text-xs font-medium text-black bg-accent-portfolio rounded-full px-4 py-2 hover:bg-accent-portfolio/90 transition-colors"
+            style={{ fontFamily: 'var(--font-poppins), sans-serif' }}
+          >
+            Show All Experience
+            <ArrowUpRight className="size-3" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   )

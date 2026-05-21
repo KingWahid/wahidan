@@ -16,7 +16,7 @@ export function CTASection({ title, subtitle, contactLabel, resumeLabel }: CTASe
   return (
     <>
       <hr className="border-zinc-200 dark:border-zinc-800" />
-      <section id="contact" className="py-16 px-8 md:px-32 bg-zinc-50 dark:bg-[#080c12]">
+      <section id="contact" className="py-16 px-4 sm:px-8 md:px-32 bg-zinc-50 dark:bg-[#080c12]">
         <motion.div
           className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8"
           variants={staggerContainer}
@@ -27,7 +27,7 @@ export function CTASection({ title, subtitle, contactLabel, resumeLabel }: CTASe
           {/* Left: text */}
           <motion.div variants={fadeUp}>
             <h2
-              className="text-3xl md:text-4xl font-bold text-foreground"
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground"
               style={{ fontFamily: "'Cabinet Grotesk', sans-serif" }}
             >
               {title}
