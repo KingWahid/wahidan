@@ -39,13 +39,13 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://wahidannashrullah.dev'),
-  title: "Wahidannashrullah — Front-End Developer",
+  title: "Wahidan — Fullstack Developer",
   description:
-    "Portfolio of Wahidannashrullah, a Front-End Developer from Indonesia specializing in React, Next.js, and building fast, accessible web experiences.",
+    "Portfolio of Wahidan Nashrullah, a Fullstack Developer from Bandung, Indonesia specializing in React, Next.js, Go, and building scalable web & mobile applications.",
   openGraph: {
-    title: "Wahidannashrullah — Front-End Developer",
+    title: "Wahidan — Fullstack Developer",
     description:
-      "Portfolio of Wahidannashrullah, a Front-End Developer from Indonesia specializing in React, Next.js, and building fast, accessible web experiences.",
+      "Portfolio of Wahidan Nashrullah, a Fullstack Developer from Bandung, Indonesia specializing in React, Next.js, Go, and building scalable web & mobile applications.",
     images: ["/images/og-image.jpg"],
   },
 };
